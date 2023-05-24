@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Helath Insurance Cross-sell Predictor</title>
+</head>
+<body>
+
+    <h1>Helath Insurance Cross-sell Predictor</h1>
+
+    <form action="{{ url_for ('predict')}}" method="POST">
+
+        <label for="">Gender</label><br>
+        <input type="text" name="Gender" placeholder="Male or Female"><br><br>
+
+        <label for="">Age</label><br>
+        <input type="number" name="Age" placeholder="Enter the Age"><br><br>
+
+        <label for="">Driving License</label><br>
+        <input type="text" name="Driving_License" placeholder="Yes or no"><br><br>
+
+        <label for="">Region Code</label><br>
+        <input type="number" name="Region_Code" placeholder=""><br><br>
+
+        <label for="">Previously Insured</label><br>
+        <input type="text" name="Previously_Insured" placeholder="Yes or no"> <br><br>
+
+        <label for="">Vehicle Age</label><br>
+        <input type="text" name="Vehicle_Age" placeholder="new or latest or old "><br><br>
+
+        <label for="">Vehicle Damage</label><br>
+        <input type="text" name="Vehicle_Damage" placeholder="Yes or No"><br><br>
+
+        <label for="">Annual Premium</label><br>
+        <input type="number" name="Annual_Premium" placeholder="Enter the Premium amount"><br><br>
+        
+        <label for="">Policy Sales Channel</label><br>
+        <input type="number" name="Policy_Sales_Channel" placeholder=""><br><br>
+
+        <label for="">Vintage</label><br>
+        <input type="number" name="Vintage" placeholder="Number of Days, Customer has been associated with the company"><br><br>
+
+        <input type="submit" value="Predict">
+
+    </form>
+
+
+
+
+</body>
+</html>
